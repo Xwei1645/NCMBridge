@@ -1,2 +1,2 @@
 # NCMBridge
-Written by Xwei with Copilot
+*Written by Xwei with Copilot.*
