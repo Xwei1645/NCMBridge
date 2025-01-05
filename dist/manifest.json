@@ -1,0 +1,16 @@
+{
+    "manifest_version": 1,
+    "name": "NCM-Bridge", 
+    "version": "0.0.1",
+    "author": "Xwei1645", 
+    "description": "一款用于同步NCM播放信息的插件。",
+    "betterncm_version": ">=0.2.5",
+    "preview": "preview.png",
+    "injects": {
+        "Main": [ 
+            {
+                "file": "./main.js"
+            }
+        ]
+    }
+}

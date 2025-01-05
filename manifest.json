@@ -1,0 +1,18 @@
+{
+    "manifest_version": 1,
+    "name": "NCM-Bridge",
+    "slug": "ncmbridge",
+    "version": "0.0.1",
+    "author": "Xwei1645",
+    "description": "一款用于同步NCM播放信息的插件。",
+    "betterncm_version": ">=1.0.0",
+    "preview": "preview.png",
+    "loadAfter": [ "libsonginfo", "liblyric", "LibEAPIRequest" ],
+    "injects": {
+        "Main": [
+            {
+                "file": "./dist/main.js"
+            }
+        ]
+    }
+}

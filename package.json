@@ -1,0 +1,23 @@
+{
+  "name": "NCM-Bridge",
+  "version": "1.0.0",
+  "description": "一款用于同步NCM播放信息的插件。",
+  "main": "index.js",
+  "repository": "https://github.com/BetterNCM/boilerplate",
+  "author": "Xwei1645 <xuwei1645@163.com>",
+  "license": "GPL-3.0-or-later",
+  "private": false,
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.29",
+    "@types/react-dom": "^18.0.11",
+    "esbuild": "^0.17.13"
+  },
+  "scripts": {
+    "build:dev": "esbuild ./src/main.ts ./src/startup_script.ts --bundle --outdir=dist --sourcemap=inline --watch --target=chrome91",
+    "build": "esbuild ./src/main.ts ./src/startup_script.ts --bundle --minify --outdir=dist --target=chrome91",
+    "analyze": "esbuild --bundle ./src/main.ts --outdir=dist --minify --analyze=verbose"
+  }
+}
